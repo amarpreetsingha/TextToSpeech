@@ -5,8 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:weightSum="1"
-    tools:context="com.aceshub.tts.MainActivity">
+    tools:context="com.aceshub.tts.MainActivity"
+    android:padding="10dp">
+
+
+ <Spinner
+     android:id="@+id/locales"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_weight="0.05"
+></Spinner>
 
 
     <EditText
@@ -14,20 +22,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:padding="10dp"
         android:layout_weight="0.99"
         android:inputType="textPersonName"
         android:gravity="left|top"
-        android:hint="Enter text.." />
+        android:hint="Enter text.."
+        android:background="#e0e0e0"/>
 
     <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentStart="true"
         android:text="CONVERT TO SPEECH"
-        android:layout_weight="0.01"/>
+        android:layout_weight="0.01"
+        android:layout_marginTop="10dp"
+        android:background="#e0e0e0"/>
 </LinearLayout>

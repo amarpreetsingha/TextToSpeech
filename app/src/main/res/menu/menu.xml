@@ -4,5 +4,8 @@
 
     <item
         android:id="@+id/importFile"
-        android:title="Import File" />
+        android:title="Import" />
+    <item
+        android:id="@+id/exportFile"
+        android:title="Export" />
 </menu>
